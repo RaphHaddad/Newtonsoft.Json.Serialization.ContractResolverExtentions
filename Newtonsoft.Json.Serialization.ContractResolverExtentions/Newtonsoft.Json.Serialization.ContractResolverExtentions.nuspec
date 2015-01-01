@@ -2,13 +2,13 @@
 <package >
   <metadata>
     <id>Json.NET.ContractResolverExtentions</id>
-    <version>1.0</version>
+    <version>1.0.1</version>
     <title>Json.NET.ContractResolverExtentions</title>
     <authors>Raphael Haddad</authors>
     <owners>Newtonsoft.Json.ContractResolverExtentions</owners>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
-    <description>Contract resolver extentions for Json.NET. For snake_case1 and snake_case_2</description>
-    <releaseNotes>Initial release</releaseNotes>
+    <description>Contract resolver extensions for Json.NET. For snake_case1 and snake_case_2</description>
+    <releaseNotes>Fixing issues associated with Snake Case Integer separated. And with acronyms</releaseNotes>
     <copyright>Copyright 2014</copyright>
     <tags>json snake_case serialisation serialization</tags>
   </metadata>
