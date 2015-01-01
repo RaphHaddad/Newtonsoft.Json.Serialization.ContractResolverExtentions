@@ -58,9 +58,10 @@
     <Compile Include="Person.cs" />
     <Compile Include="PrivateMembersClass.cs" />
     <Compile Include="Product.cs" />
-    <Compile Include="SnakeCasePropertyNamesContractResolverTest.cs" />
+    <Compile Include="SnakeCaseContractResolverBaseTest.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="UnitTest1.cs" />
+    <Compile Include="SnakeCasePropertyNamesContractResolverTest.cs" />
+    <Compile Include="SnakeCaseIntegerSeperatedPropertyNamesContractResolverTest.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Newtonsoft.Json.Serialization.ContractResolverExtentions\Newtonsoft.Json.Serialization.ContractResolverExtentions.csproj">
