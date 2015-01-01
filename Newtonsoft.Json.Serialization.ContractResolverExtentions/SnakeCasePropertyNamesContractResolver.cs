@@ -1,12 +1,13 @@
-﻿namespace Newtonsoft.Json.Serialization.ContractResolverExtentions
+﻿using System.Text.RegularExpressions;
+
+namespace Newtonsoft.Json.Serialization.ContractResolverExtentions
 {
     public class SnakeCasePropertyNamesContractResolver : DefaultContractResolver
     {
+        protected internal Regex converter = new Regex(@"((?<=[a-z])(?<b>[A-Z])|(?<=[^_])(?<b>[A-Z][a-z]))");
         protected override string ResolvePropertyName(string propertyName)
         {
-            var startUnderscores = System.Text.RegularExpressions.Regex.Match(propertyName, @"^_+");
-            return startUnderscores + System.Text.RegularExpressions.Regex
-                .Replace(propertyName, @"([A-Z])", "_$1").ToLower().TrimStart('_');
+          return converter.Replace(propertyName, "_${b}").ToLower();
         }
     }
 }
